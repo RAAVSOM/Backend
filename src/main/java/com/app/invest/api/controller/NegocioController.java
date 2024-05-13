@@ -23,7 +23,7 @@ public class NegocioController {
     @Autowired
     private EmprendedorService emprendedorService;
     
-    @Autowired
+    /*@Autowired
     private DropboxService dropboxService;
     
     //--------------funcion subida y descarga de archivos-------------
@@ -47,7 +47,7 @@ public class NegocioController {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al subir el archivo");
         }
-    }
+    }*/
     
     //-------------funciones administrador-------------
     @GetMapping("sinaprobar")
