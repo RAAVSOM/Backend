@@ -1,18 +1,18 @@
 package com.app.invest.domain.service;
 
-import com.dropbox.core.DbxDownloader;
+/*import com.dropbox.core.DbxDownloader;
 import com.dropbox.core.DbxRequestConfig;
 import com.dropbox.core.v2.DbxClientV2;
 import com.dropbox.core.v2.files.FileMetadata;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Value;*/
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
+//import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
 
 @Service
 public class DropboxService {
-    @Value("${dropbox.accessToken}")
+    /*@Value("${dropbox.accessToken}")
     private String accessToken;
 
     public void uploadFile(MultipartFile file, Long id_negocio, String fileName) throws Exception {
@@ -32,5 +32,5 @@ public class DropboxService {
         try (DbxDownloader<FileMetadata> downloader = client.files().getPreview("/" + id_negocio + "/" + fileName + ".jpg")) {
             return downloader.getResult();
         }
-    }
+    }*/
 }
